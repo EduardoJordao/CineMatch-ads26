@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   width: 100%;
-  background-image: url('cinematch1.png');
+  background-image: url('./cinematch1.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
