@@ -1,11 +1,21 @@
-body {
+* {
   margin: 0;
-  padding: 10px;
-  background: rgb(235, 229, 240);
-  font-family: Arial, sans-serif;
-
+  padding: 0;
 }
 
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('cinematch1');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
 
 .clock {
   text-align: center;
@@ -13,20 +23,24 @@ body {
 
 main {
   max-width: 650px;
-  margin: auto;
+  margin: 20px auto;
   padding: 50px;
-  background: rgb(191, 225, 237);
+  background: rgba(191, 225, 237, 0.95);
   border-radius: 8px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-
 
 h1 {
   color: #6a1b9a;
 }
 
 label {
-  display:flex;
+  display: flex;
   margin-top: 15px;
+  color: #333;
+  font-weight: 500;
 }
 
 input,
@@ -36,6 +50,16 @@ button {
   padding: 10px;
   margin-top: 5px;
   box-sizing: border-box;
+  border: 2px solid #6a1b9a;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #9c27b0;
+  box-shadow: 0 0 5px rgba(106, 27, 154, 0.3);
 }
 
 button {
@@ -44,12 +68,22 @@ button {
   background: #6a1b9a;
   border: 0;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #9c27b0;
+  transform: scale(1.02);
 }
 
 #resultado {
   color: green;
   font-weight: bold;
+  margin-top: 20px;
 }
+
 .logo {
   width: 100%;
   display: flex;
