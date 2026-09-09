@@ -97,3 +97,74 @@ button:hover {
   height: auto;
   display: block;
 }
+
+/* ========== RESPONSIVO PARA MOBILE ========== */
+
+/* Tablets - até 768px */
+@media (max-width: 768px) {
+  main {
+    max-width: 100%;
+    padding: 30px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .logo img {
+    width: 300px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Celulares - até 480px */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 20px;
+    margin: 5px auto;
+    border-radius: 5px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 12px;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  #resultado {
+    font-size: 12px;
+  }
+}
