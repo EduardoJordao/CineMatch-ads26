@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CineMatch</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,8 +17,8 @@
       <label for="nome">Qual seu nome ou apelido?</label>
       <input id="nome" type="text" required>
 
-<label for="filme-serie">Qual sua preferência Filmes ou Séries?</label>
-<select id="filme-serie" required>
+      <label for="filme-serie">Qual sua preferência Filmes ou Séries?</label>
+      <select id="filme-serie" required>
         <option value="">Selecione</option>
         <option>Filmes</option>
         <option>Séries</option>
@@ -37,14 +36,14 @@
 
       <label for="canais-app">Quais são seus canais ou aplicativos favoritos?</label>
       <select id="canais-app" required>
-              <option value="">Selecione</option>
-              <option>Netflix</option>
-              <option>Amazon prime</option>
-              <option>HBO</option>
-              <option>Apple</option>
-              <option>Paramont</option>
-              <option>Globoplay</option>
-            </select>
+        <option value="">Selecione</option>
+        <option>Netflix</option>
+        <option>Amazon prime</option>
+        <option>HBO</option>
+        <option>Apple</option>
+        <option>Paramont</option>
+        <option>Globoplay</option>
+      </select>
 
       <label for="filme">Qual é seu filme ou série favorita?</label>
       <input id="filme" type="text" required>
@@ -60,25 +59,19 @@
       <button type="submit">Enviar</button>
     </form>
 
-    <p id="resultado"></p>
-  </main>
-
-  <main>
-  
     <div class="logo">
       <img src="CineMatch.png" alt="Logo CineMatch">
     </div>
-  
-    <form id="formulario">
-    
-    </form>
-  <dialog id="modalResultado">
-<div class="modal-content">
-<p id="resultado"></p>
-<button id="fecharModal">Fechar</button>
-</div>
   </main>
 
+  <dialog id="modalResultado">
+    <div class="modal-content">
+      <p id="resultado"></p>
+      <button id="fecharModal">Fechar</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
