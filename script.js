@@ -4,7 +4,7 @@ const modal = document.querySelector("#modalResultado");
 const fecharModal = document.querySelector("#fecharModal");
 
 formulario.addEventListener("submit", function (evento)
-  evento.preventDefault();
+  evento.preventDefault();{
 
   const nome = document.querySelector("#nome").value;
   const genero = document.querySelector("#genero").value;
