@@ -1,7 +1,5 @@
 const formulario = document.querySelector("#formulario");
 const resultado = document.querySelector("#resultado");
-const modal = document.querySelector("#modalResultado");
-const fecharModal = document.querySelector("#fecharModal");
 
 formulario.addEventListener("submit", function (evento) {
   evento.preventDefault();
@@ -10,14 +8,11 @@ formulario.addEventListener("submit", function (evento) {
   const genero = document.querySelector("#genero").value;
   const audio = document.querySelector("#audio").value;
   const filme = document.querySelector("#filme").value;
-  const filmeserie = document.querySelector("#filme-serie").value;
-  const canaisapp = document.querySelector("#canais-app").value;
+  const filmeSerie = document.querySelector("#filme-serie").value;
+  const canaisApp = document.querySelector("#canais-app").value;
 
-  resultado.textContent = `Obrigado, ${nome}! Você assiste sempre ${filmeserie}, você prefere filmes/séries de ${genero}. Seu canal/aplicativo favorito é ${canaisapp}, seu filme favorito é ${filme} e sua preferência de áudio é ${audio}.`;
+  resultado.textContent = `Obrigado, ${nome}! Você prefere ${filmeSerie}, seu gênero favorito é ${genero}. 
+Seu canal/aplicativo favorito é ${canaisApp}, seu filme/série favorito(a) é ${filme} e sua preferência de áudio é ${audio}.`;
 
-  modal.showModal();
-});
-
-fecharModal.addEventListener("click", function () {
-  modal.close();
+  formulario.reset();
 });
