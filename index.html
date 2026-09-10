@@ -1,77 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CineMatch</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="icon" type="image/x-icon" href="pngwing.com.png">
 </head>
-
 <body>
   <main>
     <h1>CineMatch 🎥</h1>
-    <p>Óla somos da CineMatch e através desse formulário gostariamos de saber suas preferências de filmes e séries !</p>
-    
-    <form id="formulario">
-      <label for="nome">Qual seu nome ou apelido?</label>
-      <input id="nome" type="text" required>
+    <p>Olá, somos da CineMatch e, através deste formulário, gostaríamos de saber suas preferências de filmes e séries!</p>
 
-      <label for="filme-serie">Qual sua preferência Filmes ou Séries?</label>
-      <select id="filme-serie" required>
+    <form id="formulario">
+      <label for="nome">Qual é o seu nome ou apelido?</label>
+      <input id="nome" name="nome" type="text" required>
+
+      <label for="filme-serie">Qual é a sua preferência: filmes ou séries?</label>
+      <select id="filme-serie" name="filme-serie" required>
         <option value="">Selecione</option>
-        <option>Filmes</option>
-        <option>Séries</option>
+        <option value="filmes">Filmes</option>
+        <option value="series">Séries</option>
       </select>
-      
+
       <label for="genero">Gênero favorito</label>
-      <select id="genero" required>
+      <select id="genero" name="genero" required>
         <option value="">Selecione</option>
-        <option>Ação 👮‍♂️</option>
-        <option>Comédia 🤣</option>
-        <option>Drama 😭</option>
-        <option>Ficção Ciêntifica 👽</option>
-        <option>Terror 👻</option>
+        <option value="acao">Ação 👮‍♂️</option>
+        <option value="comedia">Comédia 🤣</option>
+        <option value="drama">Drama 😭</option>
+        <option value="ficcao">Ficção 👽</option>
+        <option value="terror">Terror 👻</option>
       </select>
 
       <label for="canais-app">Quais são seus canais ou aplicativos favoritos?</label>
-      <select id="canais-app" required>
+      <select id="canais-app" name="canais-app" required>
         <option value="">Selecione</option>
-        <option>Netflix</option>
-        <option>Amazon prime</option>
-        <option>HBO</option>
-        <option>Apple</option>
-        <option>Paramont</option>
-        <option>Globoplay</option>
+        <option value="netflix">Netflix</option>
+        <option value="amazon-prime">Amazon Prime</option>
+        <option value="hbo">HBO</option>
+        <option value="apple-tv">Apple TV</option>
+        <option value="paramount">Paramount</option>
+        <option value="globoplay">Globoplay</option>
       </select>
 
       <label for="filme">Qual é seu filme ou série favorita?</label>
-      <input id="filme" type="text" required>
+      <input id="filme" name="filme" type="text" required>
 
-      <label for="audio">Qual a sua preferência de áudio?</label>
-      <select id="audio" required>
+      <label for="audio">Qual é sua preferência de áudio?</label>
+      <select id="audio" name="audio" required>
         <option value="">Selecione</option>
-        <option>Dublado</option>
-        <option>Legendado</option>
-        <option>Inglês</option>
+        <option value="dublado">Dublado</option>
+        <option value="legendado">Legendado</option>
+        <option value="ingles">Inglês</option>
       </select>
 
       <button type="submit">Enviar</button>
     </form>
 
-    <div class="logo">
-      <img src="CineMatch.png" alt="Logo CineMatch">
-    </div>
+    <p id="resultado"></p>
   </main>
 
-  <dialog id="modalResultado">
-    <div class="modal-content">
-      <p id="resultado"></p>
-      <button id="fecharModal">Fechar</button>
-    </div>
-  </dialog>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
